@@ -1,0 +1,19 @@
+
+/* defining colours for light and dark theme*/
+
+:root {
+    --primary-color: rgb(10, 30, 212);
+    --secondary-color: rgb(207, 120, 251);
+    --bg-color: rgb(176, 211, 223);
+    --font-color: rgb(0, 0, 0);
+    --heading-color: rgb(4, 96, 212);
+}
+
+[data-theme="dark"] {
+    --primary-color: rgb(36, 30, 82);
+    --secondary-color: rgb(87, 23, 87);
+    --bg-color: rgb(53, 14, 53);
+    --font-color: rgb(153, 153, 153);
+    --heading-color: rgb(252, 118, 118);
+}
+
