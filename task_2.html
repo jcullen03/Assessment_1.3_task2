@@ -14,6 +14,33 @@
         <button onclick="selectBird('Inland Thornbill')">Inland Thornbill</button>
         <button onclick="selectBird('Rose Robin')">Rose Robin</button>
     </main>
+
+    <script>
+        function selectBird(birdName) {
+            let birdImage = document.getElementById('birdImage');
+            let birdInfo = document.getElementById('birdInfo');
+    
+            if (birdName === 'Pardalote') {
+                birdImage.src = 'http://www.outgrabe.net/bird00.jpg';
+                birdInfo.textContent = 'Pardalote by fir0002 (CC-by-NC)';
+            } else if (birdName === 'Purple Swamp Hen') {
+                birdImage.src = 'http://www.outgrabe.net/bird01.jpg';
+                birdInfo.textContent = 'Purple swamp hen by Toby Hudson (CC-by-SA)';
+            } else if (birdName === 'White-headed Stilt') {
+                birdImage.src = 'http://www.outgrabe.net/bird02.jpg';
+                birdInfo.textContent = 'White-headed Stilt by JJ Harrison (CC-by-SA)';
+            } else if (birdName === 'Inland Thornbill') {
+                birdImage.src = 'http://www.outgrabe.net/bird03.jpg';
+                birdInfo.textContent = 'Inland Thornbill by Peter Jacobs (CC-by-SA)';
+            } else if (birdName === 'Rose Robin') {
+                birdImage.src = 'http://www.outgrabe.net/bird04.jpg';
+                birdInfo.textContent = 'Rose Robin by JJ Harrison (CC-by-SA)';
+            }
+        }
+    </script>
+
+    
+    
 </body>
 </html>
 
