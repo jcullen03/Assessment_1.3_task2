@@ -3,7 +3,7 @@
 <head>
     <title>Bird Selector</title>
 </head>
-<body>
+<body data-theme="Light">
     <main>
         <img id="birdImage" src="http://www.outgrabe.net/bird00.jpg" alt="Pardalote">
         <p id="birdInfo">Pardalote by fir0002 (CC-by-NC)</p>
@@ -13,6 +13,9 @@
         <button onclick="selectBird('White-headed Stilt')">White-headed Stilt</button>
         <button onclick="selectBird('Inland Thornbill')">Inland Thornbill</button>
         <button onclick="selectBird('Rose Robin')">Rose Robin</button>
+
+        <button onclick="toggleTheme()">Toggle Theme</button>
+
     </main>
 
     <script>
@@ -37,6 +40,18 @@
                 birdInfo.textContent = 'Rose Robin by JJ Harrison (CC-by-SA)';
             }
         }
+
+    
+        function toggleTheme () {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+
+
     </script>
 
     <head>
